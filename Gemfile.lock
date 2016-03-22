@@ -185,6 +185,7 @@ DEPENDENCIES
   figaro
   jbuilder (~> 2.0)
   jquery-rails
+  mail
   pg
   rails (= 4.2.5.1)
   rails_12factor
