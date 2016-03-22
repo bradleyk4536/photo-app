@@ -18,6 +18,7 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'mail'
+gem 'stripe'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

@@ -3,4 +3,12 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
 	devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
+
+#	setup of stripe association
+#	user has will make only one payment
+	has_one :payment
+
+#when user signs up will be handle registration new form, will hit payment and users payment
+	accepts_nested_attributes_for :payment
+
 end
