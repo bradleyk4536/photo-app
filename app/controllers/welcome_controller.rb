@@ -4,7 +4,7 @@ class WelcomeController < ApplicationController
 
 	skip_before_action :authenticate_user!, only: [:index]
 
-#	def index
-#		@disable_nav = true
-#  end
+	def index
+		@disable_nav = true
+  end
 end

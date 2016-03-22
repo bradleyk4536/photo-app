@@ -2,55 +2,20 @@
 	<h3>Welcome: <%= current_user.email %></h3>
 <% else %>
 		<div class="jumbotron">
-		<h2>Welcome to the Photo Management App!</h2>
-		<p class="lead">
-		You'll love managing your Photos with our application. Sign up!
-		</p>
+			<div class="jumbotron-text">
+			<h2>Welcome to the Photo Management App!</h2>
+			<p class="lead">
+			You'll love managing your Photos with our application. Sign up!
+			</p>
+				<%= link_to 'Sign In', new_user_session_path,  class:"btn btn-primary"%>
+			</div>
+
 		</div>
 <section class="section-plans" align="center">
 	<div class="row">
 		<h2>Start managing your photos today</h2>
   </div>
-	<div class="row"><div class="col-md-4">
-			<div class="plan-box">
-				 	<div>
-           		<h3>Basic Plan</h3>
-							<p class="plan-price">$5 <span>/ month</span></p>
-							<p class="price-per-meal">That&#39;s only $0.16 a day</p>
-					</div>
-			<div>
-				<ul>
-					<li><i class="fa fa-check-square-o fa-2x icon-small"></i>Five image upload</li>
-					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Responsive Design</li>
-					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Access from anywhere</li>
-					<li>&emsp;</li>
-				</ul>
-			</div>
-				<div>
-			<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-				</div>
-				</div>
-			</div>
-		<div class="col-md-4">
-			<div class="plan-box">
-				 	<div>
-           		<h3>Premium Plan</h3>
-							<p class="plan-price">$10 <span>/ month</span></p>
-							<p class="price-per-meal">That&#39;s only $0.33 a day</p>
-					</div>
-			<div>
-				<ul>
-					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Unlimited image upload</li>
-					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Responsive Design</li>
-					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Access from anywhere</li>
-					<li>&emsp;</li>
-				</ul>
-			</div>
-				<div>
-			<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
-				</div>
-				</div>
-			</div>
+	<div class="row">
 		<div class="col-md-4">
 			<div class="plan-box">
 				 <div>
@@ -67,10 +32,51 @@
 				</ul>
 			</div>
 				<div>
-			<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+			<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-warning sign-up' %>
 				</div>
 			</div>
 			</div>
+		<div class="col-md-4">
+			<div class="plan-box">
+				 	<div>
+           		<h3>Premium Plan</h3>
+							<p class="plan-price">$10 <span>/ month</span></p>
+							<p class="price-per-meal">That&#39;s only $0.33 a day</p>
+					</div>
+			<div>
+				<ul>
+					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Unlimited image uploads</li>
+					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Responsive Design</li>
+					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Access from anywhere</li>
+					<li>&emsp;</li>
+				</ul>
+			</div>
+				<div>
+					<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-default sign-up' %>
+				</div>
+				</div>
+			</div>
+		<div class="col-md-4">
+			<div class="plan-box">
+				 	<div>
+           		<h3>Basic Plan</h3>
+							<p class="plan-price">$5 <span>/ month</span></p>
+							<p class="price-per-meal">That&#39;s only $0.16 a day</p>
+					</div>
+			<div>
+				<ul>
+					<li><i class="fa fa-check-square-o fa-2x icon-small"></i>Five image uploads</li>
+					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Responsive Design</li>
+					<li><i class="fa fa-check-square-o fa-2x icon-small "></i>Access from anywhere</li>
+					<li>&emsp;</li>
+				</ul>
+			</div>
+				<div>
+					<%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-default sign-up' %>
+				</div>
+				</div>
+			</div>
+
 			</div>
 </section>
 <% end %>
