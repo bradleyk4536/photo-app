@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
 #	user has will make only one payment
 	has_one :payment
 
+#	associate many images to the user
+	has_many :images
+
 #when user signs up will be handle registration new form, will hit payment and users payment
 	accepts_nested_attributes_for :payment
 
